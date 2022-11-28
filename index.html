@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Minecraft</title>
+        <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+        <!-- Radio buttons: select model to build -->
+        <!-- onchange function gets value from selected button -->
+        <div id="modelSelect">
+            <p>3D Models:</p>
+            <!-- BOX -->
+            <div>
+                <input type="radio" name="model" value="box" id="box" onchange="getModelSelected(this)">
+                <label for="box">Box</label>
+            </div>
+            <!-- PYRAMID -->
+            <div>
+                <input type="radio" name="model" value="pyramid" id="pyramid" onchange="getModelSelected(this)">
+                <label for="pyramid">Pyramid</label>
+            </div>
+            <!-- CASTLE -->
+            <div>
+                <input type="radio" name="model" value="castle" id="castle" onchange="getModelSelected(this)">
+                <label for="castle">Castle</label>
+            </div>
+            <!-- CROP CIRCLE -->
+            <div>
+                <input type="radio" name="model" value="cropCircle" id="cropCircle" onchange="getModelSelected(this)">
+                <label for="cropCircle">Crop Circle</label>
+            </div>
+        </div>
+
+	</body>
+</html>
+<script src="js/three.js"></script>
+<script src="js/castleIgnoreBlocks.js"></script>
+<script src="js/helperFunctions.js"></script> 
+<script src="js/modelBuilderFunctions.js"></script>    
+<script src="js/setScene.js"></script>
